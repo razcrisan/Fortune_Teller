@@ -67,7 +67,7 @@ namespace Fortune_Teller
             }
             else
             {
-                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + ",you will retire next year");
+                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + ", you will retire next year");
             }
 
 
@@ -126,7 +126,7 @@ namespace Fortune_Teller
             
             if (favColor == "red")
             {
-                Console.WriteLine("and you will be driving a red 1991 Toyota Corrolla.");
+                Console.WriteLine("and your means of transportation is your \"Instant Transmittion Technique\"");
             }
             else if (favColor == "orange")
             {
@@ -134,7 +134,8 @@ namespace Fortune_Teller
             }
             else if (favColor == "yellow")
             {
-                Console.WriteLine("and your means of transportation will be a yellow Nissan GTR.");
+                Console.WriteLine("and since you've harnessed the will of the Saiyans");
+                Console.WriteLine("Master Roshi gave you a yellow flying nimbus as a gift");
             }
             else if (favColor == "green")
             {
