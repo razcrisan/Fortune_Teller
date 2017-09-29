@@ -10,150 +10,149 @@ namespace Fortune_Teller
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("I AM A GENIE... WHAT!... Is your first name?...");
-            string firstName = (Console.ReadLine().ToLower().Trim());
+            // first name
+            Console.WriteLine("I AM A GENIE... What s your first name?...");
+            string firstName = (Console.ReadLine().Trim());
            
+            // last name
+            Console.WriteLine("Ahhh... What is your last name?");
+            string lastName = (Console.ReadLine().Trim());
 
-            Console.WriteLine("Ahhh... WHAT! is your last name?");
-            string lastName = (Console.ReadLine().ToLower().Trim());
-
-
+            //age
             Console.WriteLine("How old are you, young one?");
             int userAge = int.Parse(Console.ReadLine());
             
 
-
-            Console.WriteLine("What number month of the year were you spawned in?");
+            //month
+            Console.WriteLine("Sweet, now type in your birth month in the form of a number.");
             int monthNumber = int.Parse(Console.ReadLine());
 
 
-
+            //color
             Console.WriteLine("What is your favorite ROYGBIV color?...");
-            Console.WriteLine("If you are confused as to what ROYGBIV means, type \"help\"");
+            Console.WriteLine("If you are confused as to what ROYGBIV means, type in \"help\"");
             string favColor = (Console.ReadLine().ToLower().Trim());
-            
-            
             
             if (favColor == "help")
             {
                 Console.WriteLine("Choose from: red, orange, yellow, green, blue, indigo, violet.");
-                string userHelp = Console.ReadLine().ToLower();
+                favColor = Console.ReadLine().ToLower();
             }
            else
             {
-                Console.WriteLine("Proceed to the next question.");
+                Console.WriteLine("Proceed.");
             }
 
+
+
+            //siblings
             Console.WriteLine("Now please tell me... How many siblings do you have?");
             int numSiblings = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("I have met many mortals, some you may know. Hugh Heffner, Dan Bilzerian to name a few.");
-            Console.WriteLine("However " + firstName + " " + lastName + " I have never seen one as unlucky as you!");
-            Console.WriteLine("If you wish to know your fortune... type \"KAZAAM\"");
-            string showFortune = Console.ReadLine().ToUpper();
 
-            if (showFortune == "KAZAAM")
-            {
-                Console.WriteLine("HERE IS YOUR FORTUNE!");
-            }
-            else
-            {
-                Console.WriteLine("Just type in KAZAAM bro...");
-            }
-        
 
+         
 
             //part 2 
 
-            //Age
+
+
+
+            //Age (retirement)
             if (userAge % 2 == 0)
 
             {
                
-                Console.WriteLine( firstName + " " + lastName + " " +  ", you will retire in 25 years!");
+                Console.WriteLine( firstName + " " + lastName +  ", you will retire in 25 years");
             }
             else
             {
-                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + ", you will retire next year!");
+                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + ",you will retire next year");
             }
 
 
-            //monthNumber (Birth Month)
+
+
+
+
+            //monthNumber (Birth Month) (money in the bank)
 
             if (monthNumber >= 1 || monthNumber <= 4)
             {
-                Console.WriteLine("with $50,000 in the bank.");
+                Console.WriteLine("with $50,000 in the bank");
             }
             else if (monthNumber >= 5 || monthNumber <= 8)
             {
-                Console.WriteLine("with $200,000,000 in the bank.");
+                Console.WriteLine("with $200,000,000 in the bank");
             }
             else if (monthNumber >= 9 || monthNumber <= 12)
             {
-                Console.WriteLine("with $5,000 in the bank.");
+                Console.WriteLine("with $5,000 in the bank");
             }
             else if (monthNumber < 1 || monthNumber > 12)
             {
-                Console.WriteLine("with $0.00 in the bank.");
+                Console.WriteLine("with a measly $0.00 in the bank");
             }
                    
 
 
-            //Number of Siblings
+
+
+            //Number of Siblings (vacation home)
 
             if (numSiblings <= 0)
             {
-                Console.WriteLine("With a vacation home in a very cold place"); 
-                Console.WriteLine("ice fishing with the Tsimishian Eskimo Tribe in British Columbia, Alaska.");
+                Console.WriteLine("with a vacation home along the"); 
+                Console.WriteLine("Tsimishian Eskimo Tribe in British Columbia, Alaska");
             }
             else if (numSiblings == 1)
             {
-                Console.WriteLine("With a vacation home on the islands of Bora Bora.");
+                Console.WriteLine("with a vacation home on the islands of Bora Bora");
             }
             else if (numSiblings == 2)
             {
-                Console.WriteLine("With a vacation home in beautiful Bangkok, Thailand.");
+                Console.WriteLine("with a vacation home in beautiful Bangkok, Thailand");
             }
             else if (numSiblings >= 3)
             {
-                Console.WriteLine("With a vacation home in Aspen, Colorado partying with your homeboys/girls.");
+                Console.WriteLine("with a vacation home in Aspen, Colorado");
             }
 
 
 
 
-            // favorite color
+            // favorite color/ transportation
             
             
             if (favColor == "red")
             {
-                Console.WriteLine("Sorry buddy, You will drive a beat up red 1996 Toyota Corrolla.");
+                Console.WriteLine("and you will be driving a red 1991 Toyota Corrolla.");
             }
             else if (favColor == "orange")
             {
-                Console.WriteLine("Ayyee!! Looks like you'll be riding clean in an orange Porche Panamera.");
+                Console.WriteLine("and it looks like you'll be traveling in an orange giant, fuzzy peach");
             }
             else if (favColor == "yellow")
             {
-                Console.WriteLine("Hmmm... Your only means of transportation will be a yellow Nissan GTR.");
+                Console.WriteLine("and your means of transportation will be a yellow Nissan GTR.");
             }
             else if (favColor == "green")
             {
-                Console.WriteLine("You will be atop a green camo humvee... You had a crazy dream one day and joined the army.");
+                Console.WriteLine("and your ride will be a fully loaded green unicycle");
             }
             else if (favColor == "blue")
             {
-                Console.WriteLine("You will be riding on a blue skateboard"); 
-                Console.WriteLine("as you became an apprentice under Tony Hawk");
+                Console.WriteLine("a blue hoverboard"); 
+                
             }
             else if (favColor == "indigo")
             {
-                Console.WriteLine("You will be giving up all material items and devoting your life to the gods");
-                Console.WriteLine("Their power will grant you an indigo floating traveling cloud");
+                Console.WriteLine("and since you gave up all material items and devoted your life to the gods,");
+                Console.WriteLine("their power granted you an indigo nimbus cloud for transportation");
             }
             else if (favColor == "violet")
             {
-                Console.WriteLine("You will be partying with Snoop Dog atop the Soul Plane, traveling from coast 2 coast at your whim.");
+                Console.WriteLine("and you will be riding your trusty dragon steed... Yes a dragon.");
             }
 
 
