@@ -14,7 +14,6 @@ namespace Fortune_Teller
             string firstName = (Console.ReadLine().ToLower().Trim());
            
 
-
             Console.WriteLine("Ahhh... WHAT! is your last name?");
             string lastName = (Console.ReadLine().ToLower().Trim());
 
@@ -68,32 +67,51 @@ namespace Fortune_Teller
 
             //Age
             if (userAge % 2 == 0)
+
             {
-                Console.WriteLine("hahaha my my....you are an unlucky one! You will be working until you croak!");
+               
+                Console.WriteLine( firstName + " " + lastName + " " +  "will retire in 25 years!");
             }
             else
             {
-                Console.WriteLine("Ahh, you are a lucky one! You will retire at the tender age of 35!");
+                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + "You will retire next year!");
             }
+
+
+            //monthNumber (Birth Month)
+
+            if (monthNumber >= 1 || monthNumber <= 4)
+            {
+                Console.WriteLine("You will retire with $50,000 in the bank.");
+            }
+            else if (monthNumber >= 5 || monthNumber <= 8)
+            {
+                Console.WriteLine("You will retire with $200,000,000 in the bank.");
+            }
+            else if (monthNumber >= 9 || monthNumber <= 12)
+            {
+                Console.WriteLine("You will retire with $5,000 in the bank.");
+            }
+
 
             //Number of Siblings
 
             if (numSiblings <= 0)
             {
-                Console.WriteLine("Your vacation will be spent"); 
+                Console.WriteLine("With a vacation home in a very cold place"); 
                 Console.WriteLine("ice fishing with the Tsimishian Eskimo Tribe in British Columbia, Alaska.");
             }
             else if (numSiblings == 1)
             {
-                Console.WriteLine("Your vacation will be spent on the islands of Bora Bora.");
+                Console.WriteLine("With a vacation home on the islands of Bora Bora.");
             }
             else if (numSiblings == 2)
             {
-                Console.WriteLine("Your vacation will be spent in beautiful Bangkok, Thailand.");
+                Console.WriteLine("With a vacation home in beautiful Bangkok, Thailand.");
             }
             else if (numSiblings >= 3)
             {
-                Console.WriteLine("You will spend your vacation in Aspen, Colorado with your homeboys/girls.");
+                Console.WriteLine("With a vacation home in Aspen, Colorado partying with your homeboys/girls.");
             }
 
 
@@ -133,7 +151,9 @@ namespace Fortune_Teller
                 Console.WriteLine("You will be partying with Snoop Dog atop the Soul Plane, traveling from coast 2 coast.");
             }
 
-            
+
+
+           
 
 
         }
