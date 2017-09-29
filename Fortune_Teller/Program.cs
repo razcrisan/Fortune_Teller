@@ -70,11 +70,11 @@ namespace Fortune_Teller
 
             {
                
-                Console.WriteLine( firstName + " " + lastName + " " +  "will retire in 25 years!");
+                Console.WriteLine( firstName + " " + lastName + " " +  ", you will retire in 25 years!");
             }
             else
             {
-                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + "You will retire next year!");
+                Console.WriteLine("You are a lucky one, " + firstName + " " + lastName + " " + ", you will retire next year!");
             }
 
 
@@ -82,16 +82,21 @@ namespace Fortune_Teller
 
             if (monthNumber >= 1 || monthNumber <= 4)
             {
-                Console.WriteLine("You will retire with $50,000 in the bank.");
+                Console.WriteLine("with $50,000 in the bank.");
             }
             else if (monthNumber >= 5 || monthNumber <= 8)
             {
-                Console.WriteLine("You will retire with $200,000,000 in the bank.");
+                Console.WriteLine("with $200,000,000 in the bank.");
             }
             else if (monthNumber >= 9 || monthNumber <= 12)
             {
-                Console.WriteLine("You will retire with $5,000 in the bank.");
+                Console.WriteLine("with $5,000 in the bank.");
             }
+            else if (monthNumber < 1 || monthNumber > 12)
+            {
+                Console.WriteLine("with $0.00 in the bank.");
+            }
+                   
 
 
             //Number of Siblings
@@ -143,12 +148,12 @@ namespace Fortune_Teller
             }
             else if (favColor == "indigo")
             {
-                Console.WriteLine("You will be giving up all material items and devoting your life to the gods... (Press Enter)");
-                Console.WriteLine("...Their power will grant you an indigo floating traveling cloud");
+                Console.WriteLine("You will be giving up all material items and devoting your life to the gods");
+                Console.WriteLine("Their power will grant you an indigo floating traveling cloud");
             }
             else if (favColor == "violet")
             {
-                Console.WriteLine("You will be partying with Snoop Dog atop the Soul Plane, traveling from coast 2 coast.");
+                Console.WriteLine("You will be partying with Snoop Dog atop the Soul Plane, traveling from coast 2 coast at your whim.");
             }
 
 
