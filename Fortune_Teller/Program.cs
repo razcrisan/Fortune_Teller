@@ -126,20 +126,20 @@ namespace Fortune_Teller
             
             if (favColor == "red")
             {
-                Console.WriteLine("and your means of transportation is your \"Instant Transmittion Technique\"");
+                Console.WriteLine("and you will drive a red Porche Panamera");
             }
             else if (favColor == "orange")
             {
-                Console.WriteLine("and it looks like you'll be traveling in an orange giant, fuzzy peach");
+                Console.WriteLine("and it looks like you'll be driving an orange rocket car");
             }
             else if (favColor == "yellow")
             {
                 Console.WriteLine("and since you've harnessed the will of the Saiyans");
-                Console.WriteLine("Master Roshi gave you a yellow flying nimbus as a gift");
+                Console.WriteLine("you've been awarded a yellow flying nimbus cloud");
             }
             else if (favColor == "green")
             {
-                Console.WriteLine("and your ride will be a fully loaded green unicycle");
+                Console.WriteLine("and your ride will be a green unicycle");
             }
             else if (favColor == "blue")
             {
@@ -149,11 +149,11 @@ namespace Fortune_Teller
             else if (favColor == "indigo")
             {
                 Console.WriteLine("and since you gave up all material items and devoted your life to the gods,");
-                Console.WriteLine("their power granted you an indigo nimbus cloud for transportation");
+                Console.WriteLine("their power granted you the ability to fly");
             }
             else if (favColor == "violet")
             {
-                Console.WriteLine("and you will be riding your trusty dragon steed... Yes a dragon.");
+                Console.WriteLine("and you will be riding your trusty dragon steed.");
             }
 
 
